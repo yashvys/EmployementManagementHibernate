@@ -1,0 +1,217 @@
+/* =========================================
+    Project: Employee Management System
+    File: styles.css
+    Description: CSS file for styling the web pages with dark mode
+   ========================================= */
+
+/* =========================================
+   1.  Global Styles
+   ========================================= */
+body {
+	font-family: 'Roboto', sans-serif; /* Modern font */
+	margin: 0; /* Reset default margin */
+	padding: 0; /* Reset default padding */
+	background-color: #121212;
+	/* Darker background color for better contrast */
+	color: #e0e0e0; /* Light grey text color */
+	line-height: 1.6; /* Line height for better readability */
+	transition: background-color 0.5s ease;
+	/* Smooth transition for background */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* Ensure body covers full viewport height */
+}
+
+/* =========================================
+   2. Typography Styles
+   ========================================= */
+h1, h2 {
+	text-align: center; /* Center headings */
+	color: #6dd5ed; /* Light blue color for headings */
+	margin-bottom: 20px; /* Increased margin below headings */
+	font-weight: 600; /* Slightly bolder font weight */
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+	letter-spacing: 1px; /* Added letter spacing for a more airy feel */
+}
+
+/* =========================================
+   3.  Link Styles
+   ========================================= */
+a {
+	text-decoration: none; /* Remove default underlines */
+	color: #6dd5ed; /* Set light blue for link color */
+	transition: color 0.3s ease, transform 0.3s ease;
+	/* Smooth color transition on hover */
+}
+
+a:hover {
+	text-decoration: underline; /* Add underline on hover */
+	color: #4dabf7; /* Slightly lighter blue on hover */
+	transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* =========================================
+   4.  Form Input and Button Styles
+   ========================================= */
+input[type="text"], input[type="number"], input[type="email"] {
+	width: calc(100% - 20px); /* Make inputs full width, subtract padding */
+	padding: 12px 15px; /* Add padding for better look */
+	margin-bottom: 15px; /* Margin below the input */
+	background-color: #222; /* Darker background for input */
+	border: 1px solid #555; /* Dark border */
+	border-radius: 5px; /* Slightly more rounded corners */
+	color: #e0e0e0; /* Light text color */
+	box-sizing: border-box; /* Include padding and border */
+	transition: border-color 0.3s ease, background-color 0.3s ease;
+	/* Smooth border transition */
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus
+	{
+	outline: none;
+	border-color: #6dd5ed; /* Highlight border on focus */
+	background-color: #333; /* Slightly lighter background on focus */
+}
+
+input[type="submit"] {
+	background-color: #6dd5ed; /* Blue background for submit button */
+	color: #1a1a1a; /* Dark color for submit text */
+	padding: 12px 20px; /* Padding for button look */
+	border: none; /* Remove default borders */
+	border-radius: 5px; /* Slightly more rounded corners */
+	cursor: pointer; /* Make it a pointer cursor */
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s
+		ease; /* Smooth transition for color */
+}
+
+input[type="submit"]:hover {
+	background-color: #4dabf7; /* Lighter blue on hover */
+	color: #000; /* Black text on hover */
+	transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* =========================================
+   5. Form Styles
+   ========================================= */
+form {
+	width: 500px; /* Form width */
+	margin: 20px auto; /* Center horizontally with some margin */
+	background-color: #2a2a2a; /* Darker form background */
+	border: 1px solid #444; /* Darker border */
+	padding: 30px; /* Increased padding for better spacing */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+}
+
+label {
+	display: block; /* Labels display on new lines */
+	margin-bottom: 10px; /* Increased margin below labels */
+	font-weight: 500; /* Lighter font weight */
+	color: #e0e0e0; /* Light grey label color */
+}
+
+/* =========================================
+   6.  Table Styles
+   ========================================= */
+table {
+	width: 90%; /* Table width */
+	margin: 20px auto; /* Center and spacing from top */
+	border-collapse: collapse; /* Collapse the borders */
+	background-color: #2a2a2a; /* Darker background */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+}
+
+th, td {
+	border: 1px solid #555; /* Darker borders */
+	padding: 15px; /* Increased spacing around cells */
+	text-align: left; /* Text aligned on left */
+}
+
+th {
+	background-color: #6dd5ed; /* Light blue color for header */
+	color: #000; /* Dark color for header text */
+	font-weight: bold; /* Header font weight */
+}
+
+tr:nth-child(even) {
+	background-color: #333; /* Dark alternate color for rows */
+}
+
+tr:hover {
+	background-color: #444; /* Highlight row on hover */
+}
+
+/* =========================================
+   7. Navigation Links Styles (For Homepage Links)
+   ========================================= */
+ul {
+	list-style: none; /* Remove list styles */
+	padding: 0; /* Remove padding */
+	text-align: center; /* Align center */
+}
+
+li {
+	margin: 20px 0; /* Increased margin for each list item */
+}
+
+.home-link-container {
+	text-align: center; /* Align center */
+	margin-top: 20px; /* Spacing for link container */
+}
+
+.home-link {
+	text-decoration: none; /* Remove text decoration */
+	padding: 12px 25px; /* Padding around the link */
+	background-color: #6dd5ed; /* Light blue background */
+	color: #000; /* Dark color for the text */
+	border-radius: 5px; /* Rounded corners */
+	display: inline-block; /* Allow padding */
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s
+		ease; /* Smooth transition */
+}
+
+.home-link:hover {
+	background-color: #4dabf7; /* Slightly lighter blue on hover */
+	color: #000; /* Make the text black on hover */
+	transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* =========================================
+   8. Content container
+   ========================================= */
+.container {
+	max-width: 1000px; /* Max container width */
+	margin: 20px auto; /* Center and spacing */
+	padding: 20px; /* Spacing around content */
+	background-color: #2a2a2a; /* Darker background */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+	flex: 1; /* Allow the container to take up remaining space */
+}
+
+/* Footer style */
+footer {
+	text-align: center; /* Align the footer text to the center */
+	margin-top: 20px; /* Top margin for the footer */
+	padding: 15px; /* Increased padding around the footer */
+	background-color: #1a1a1a; /* Dark background color for the footer */
+	color: #999; /* Lighter color for footer */
+	border-top: 1px solid #444; /* Subtle top border */
+}
+
+/* Responsive Styles */
+@media ( max-width : 768px) {
+	form {
+		width: 90%; /* Make form responsive on smaller screens */
+		padding: 20px; /* Adjust padding */
+	}
+	table {
+		width: 100%; /* Make table responsive */
+	}
+	h1, h2 {
+		font-size: 1.5em; /* Adjust heading size for smaller screens */
+	}
+	.container {
+		padding: 15px; /* Adjust container padding on smaller screens */
+	}
+}
